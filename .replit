@@ -1,6 +1,6 @@
-hidden=[".config"]
+hidden = [".config"]
 modules = ["web", "nodejs-20"]
-run = "run.now"
+run = "npm start"
 
 [nix]
 channel = "stable-24_05"
@@ -8,4 +8,12 @@ channel = "stable-24_05"
 [deployment]
 publicDir = "/"
 deploymentTarget = "static"
-run = ["sh", "-c", "run.now"]
+run = ["npm", "start"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
+
+[[ports]]
+localPort = 8081
+externalPort = 8081

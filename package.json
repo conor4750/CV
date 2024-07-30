@@ -1,0 +1,12 @@
+{
+  "name": "cv-project",
+  "version": "1.0.0",
+  "description": "A simple CV project with HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -c-1 ."
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
